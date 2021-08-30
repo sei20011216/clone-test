@@ -19,19 +19,19 @@ class ItemCreate extends React.Component {
                   <li className="main-slider-item">
                     <img
                       className="main-slider-img"
-                      src="https://vico-co.jp/dist/img/main/l-hero__image01.jpg?v=20200908170427"
+                      src="https://cdn.pixabay.com/photo/2010/12/13/10/12/background-2485_960_720.jpg"
                     />
                   </li>
                   <li className="main-slider-item">
                     <img
                       className="main-slider-img"
-                      src="https://vico-co.jp/dist/img/main/l-hero__image02.jpg?v=20200908170427"
+                      src="https://cdn.pixabay.com/photo/2018/03/11/23/37/grain-3218387_960_720.jpg"
                     />
                   </li>
                   <li className="main-slider-item">
                     <img
                       className="main-slider-img"
-                      src="https://vico-co.jp/dist/img/main/l-hero__image03.jpg?v=20200908170427"
+                      src="https://cdn.pixabay.com/photo/2016/10/25/18/16/cosamui-restaurant-09-1769616_960_720.jpg"
                     />
                   </li>
                 </ul>

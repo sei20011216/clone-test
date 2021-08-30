@@ -6,6 +6,29 @@
     border: 1px solid #a48c61;
     @include padding();
   }
+  &-heading {
+    text-align: center;
+    position: relative;
+    @include main-color();
+    @include font40();
+    &-sub {
+      margin-bottom: 3%;
+      text-align: center;
+      @include font14();
+    }
+    // &::before {
+    //   content: attr(data-en);
+    //   position: absolute;
+    //   transform: rotate(-5deg);
+    //   top: -20px;
+    //   left: 0;
+    //   color: rgba(224,66,114,0.6);
+    //   font-size: 80px;
+    //   font-weight: 400;
+    //   font-family: Hunter 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    //   font-style: italic;
+    // }
+  }
   &-item {
     display: flex;
     justify-content: space-evenly;
@@ -15,6 +38,10 @@
   &-map {
     height: auto;
     width: 50%;
+  }
+  &-img{
+    height: auto;
+    width: 40%;
   }
   &-card {
     width: 28%;

@@ -923,6 +923,19 @@ template {
   padding: 5% 0;
 }
 
+.access-heading {
+  text-align: center;
+  position: relative;
+  color: #a48c61;
+  font-size: 4em;
+}
+
+.access-heading-sub {
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: 1.4em;
+}
+
 .access-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,6 +949,11 @@ template {
 .access-map {
   height: auto;
   width: 50%;
+}
+
+.access-img {
+  height: auto;
+  width: 40%;
 }
 
 .access-card {
@@ -1162,14 +1180,13 @@ body {
 
 .about {
   text-align: center;
-  margin: 0 8%;
-  margin-bottom: 5%;
+  margin: 0 8% 10% 8%;
 }
 
 .about-header {
   margin-bottom: 1%;
   color: #a48c61;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .about-title {
@@ -1226,14 +1243,18 @@ body {
 
 .service {
   text-align: center;
+  margin-bottom: 10%;
   margin: 0 8%;
-  margin-bottom: 5%;
 }
 
 .service-header {
-  margin-bottom: 1%;
   color: #a48c61;
-  font-size: 3em;
+  font-size: 4em;
+}
+
+.service-header-sub {
+  margin-bottom: 3%;
+  font-size: 1.4em;
 }
 
 .service-item {
@@ -1297,7 +1318,11 @@ body {
 }
 
 .service-title {
+  width: 36%;
+  margin: 0 auto;
+  border-bottom: 1px solid;
   margin-bottom: 3%;
+  color: #a48c61;
   font-size: 2.4em;
 }
 
@@ -1324,8 +1349,10 @@ body {
 
 /*news*/
 .news {
-  width: 40%;
+  width: 55%;
+  margin: 0 auto;
   position: relative;
+  margin-bottom: 10%;
 }
 
 .news-title {
@@ -1333,8 +1360,14 @@ body {
   text-align: center;
   margin-top: 12%;
   color: #a48c61;
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
+}
+
+.news-title-sub {
+  text-align: center;
+  width: 35%;
+  font-size: 1.4em;
 }
 
 .news-item {
@@ -1352,7 +1385,7 @@ body {
 
 .news-item-title {
   color: #a48c61;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .news-item:before {

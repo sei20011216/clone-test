@@ -22,19 +22,19 @@ const main = () => {
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image01.jpg?v=20200908170427"
+                    src="https://cdn.pixabay.com/photo/2020/09/21/05/58/coffee-5589038_960_720.jpg"
                   />
                 </li>
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image02.jpg?v=20200908170427"
+                    src="https://cdn.pixabay.com/photo/2017/08/07/07/06/coffeehouse-2600877_960_720.jpg"
                   />
                 </li>
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image03.jpg?v=20200908170427"
+                    src="https://cdn.pixabay.com/photo/2017/08/06/07/09/coffee-2589759_960_720.jpg"
                   />
                 </li>
               </ul>
@@ -42,8 +42,8 @@ const main = () => {
           </div>
         </div>
       </section>
-      <section className="catch">
-        {/* <h1 className="catch-title">Menu</h1> */}
+      {/* <section className="catch">
+        <h1 className="catch-title">Menu</h1>
         <div className="catch-container">
           <Link to="/items/menu" className="catch-item">
             <div className="catch-item__2">
@@ -66,7 +66,7 @@ const main = () => {
             </div>
           </Link>
         </div>
-      </section>
+      </section> */}
       <section className="about">
         <h1 className="about-header">ABOUT</h1>
         <h1 className="about-title">日々の暮らしを心地良く、豊かに。</h1>
@@ -81,6 +81,7 @@ const main = () => {
       </section>
       <section className="service">
         <h1 className="service-header">SERVICE</h1>
+        <p className="service-header-sub">お知らせ一覧</p>
         <div className="service-item">
           <img
             className="service-image"
@@ -91,7 +92,9 @@ const main = () => {
             <p className="service-text">こんなことを考えて作りました。</p>
             <p className="service-text">大きな「深呼吸」をしに、</p>
             <p className="service-text">ぜひいらしてください。</p>
-            <button className="service-button button">MORE</button>
+            <Link to="/items/concept">
+              <button className="service-button button">MORE</button>
+            </Link>
           </div>
         </div>
         <div className="service-item-2 row-reverse">
@@ -104,7 +107,9 @@ const main = () => {
             <p className="service-text">日々食べるものだから</p>
             <p className="service-text">素材にもこだわりを。</p>
             <p className="service-text">心地良い場所を一緒に。</p>
-            <button className="service-button button">MORE</button>
+            <Link to="/items/menu">
+              <button className="service-button button">MORE</button>
+            </Link>
           </div>
         </div>
         <div className="service-item">
@@ -117,58 +122,48 @@ const main = () => {
             <p className="service-text">人々とのふれあいを通して</p>
             <p className="service-text">いのちを大切に。</p>
             <p className="service-text">心を豊かにするカフェ。</p>
-            <button className="service-button button">MORE</button>
+            <Link to="/items/event">
+              <button className="service-button button">MORE</button>
+            </Link>
           </div>
         </div>
       </section>
-      <section className="info-container">
-        <section className="news">
-          <h1 className="news-title">NEWS</h1>
-          <p className="news-title-sub">ニュース</p>
-          <News />
-        </section>
-        <section className="sns">
-          <h1 className="news-title">NEWS</h1>
-          <p className="news-title-sub">ニュース</p>
-          <a href="" className="news-item">
-            <span className="news-item-day">2017.02.01</span>
-            <h1 className="news-item-title">
-              カーポートを超えることは出来るのか？
-            </h1>
-          </a>
-          <a href="" className="news-item">
-            <span className="news-item-day">2017.02.01</span>
-            <h1 className="news-item-title">
-              カーポートを超えることは出来るのか？
-            </h1>
-          </a>
-          <a href="" className="news-item">
-            <span className="news-item-day">2017.02.01</span>
-            <h1 className="news-item-title">
-              カーポートを超えることは出来るのか？
-            </h1>
-          </a>
-          <a href="" className="news-item">
-            <span className="news-item-day">2017.02.01</span>
-            <h1 className="news-item-title">
-              カーポートを超えることは出来るのか？
-            </h1>
-          </a>
-        </section>
+      {/* <section className="info-container"> */}
+      <section className="news">
+        <h1 className="news-title">NEWS</h1>
+        <p className="news-title-sub">ニュース</p>
+        <News />
+      </section>
+      {/* </section> */}
+      <section className="access">
+        <div className="access-body">
+        <h1 className="access-heading" data-en="Recruit">ACCESS</h1>
+        <p className="access-heading-sub">アクセス</p>
+          <div className="access-item">
+            <img className="access-img" src="https://cdn.pixabay.com/photo/2019/06/25/13/59/city-4298285_960_720.jpg" />
+            <div className="access-card">
+              <h1 className="access-info">
+                JR大阪駅から徒歩2分
+                <br />
+                駐車場あります。
+              </h1>
+              <h1 className="access-address">
+                〒000-0000 大阪府〇〇〇市〇〇町00-00
+              </h1>
+              <p className="access-tell">
+                <span className="access-time">TELL:000-0000-0000</span>
+                <br />
+                OPEN 08:30 / CLOSE 18:00
+              </p>
+              <Link to="/items/contact">
+                <button className="access-button button">CONTACT</button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
 };
-
-// データをテンプレートに受け渡す部分の処理を記述します
-// export const getStaticProps = async () => {
-//   const data = await client.get({ endpoint: 'blog' });
-
-//   return {
-//     props: {
-//       blog: data.contents,
-//     },
-//   };
-// };
 
 export default main;

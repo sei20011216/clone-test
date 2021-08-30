@@ -65,12 +65,13 @@ body {
 
 .about {
   text-align: center;
-  @include container();
-  @include margin-bottom();
+  margin: 0 8% 10% 8%;
   &-header {
     margin-bottom: 1%;
     @include main-color();
-    @include font30();
+    @include font40();
+    &-sub {
+    }
   }
   &-title {
     margin-bottom: 2%;
@@ -127,12 +128,15 @@ body {
 
 .service {
   text-align: center;
+  margin-bottom: 10%;
   @include container();
-  @include margin-bottom();
   &-header {
-    margin-bottom: 1%;
     @include main-color();
-    @include font30();
+    @include font40();
+    &-sub {
+      margin-bottom: 3%;
+      @include font14();
+    }
   }
   &-item {
     display: flex;
@@ -178,7 +182,11 @@ body {
     width: 45%;
   }
   &-title {
+    width: 36%;
+    margin: 0 auto;
+    border-bottom: 1px solid;
     margin-bottom: 3%;
+    @include main-color();
     @include font24();
   }
   &-text {
@@ -209,17 +217,21 @@ body {
 /*news*/
 
 .news {
-  width: 40%;
+  width: 55%;
+  margin: 0 auto;
   position: relative;
-  // @include margin-bottom();
+  margin-bottom: 10%;
   &-title {
     width: 35%;
     text-align: center;
     margin-top: 12%;
     color: #a48c61;
-    @include font30();
+    @include font40();
     margin: 0;
     &-sub {
+      text-align: center;
+      width: 35%;
+      @include font14();
     }
   }
   &-item {
@@ -234,7 +246,7 @@ body {
     }
     &-title {
       color: #a48c61;
-      @include font18();
+      @include font20();
     }
     &:before {
       content: "";
