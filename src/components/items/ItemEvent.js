@@ -1,69 +1,67 @@
 // src/components/items/ItemEvent
 
-import React from 'react';
-// import './css/styles.css';
-import { useCallback } from 'react';
-import FullCalendar from '@fullcalendar/react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import FullCalendar, { formatDate } from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
-import interactionPlugin, { DateClickArg } from '@fullcalendar/interaction';
-// import googleCalendarPlugin from '@fullcalendar/googleCalendar';
-
-// const thisMonth = () => {
-//   const today = new Date();
-//   return `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(
-//     2,
-//     '0'
-//   )}`;
-// };
-
-// var root = new FullCalendar.Calendar(calendarEl, {
-//   googleCalendarApiKey: 'AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY',
-//   eventSources: [
-//     {
-//       googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
-//       className: 'event_holiday',
-//     },
-//     {
-//       googleCalendarId: 'hoge-na-calendar@group.calendar.google.com',
-//     },
-//   ],
-// });
-
-const events = [
-  {
-    // id: 1,
-    title: '新作メニュー発表!!!',
-    start: '2021-08-30',
-    end: '2021-09-01',
-  },
-  {
-    id: 1,
-    title: '食べ放題イベント！！（お盆限定！！）',
-    start: '2021-08-14',
-    end: '2021-08-16',
-  },
-  {
-    // id: 1,
-    title: 'コーヒー一杯無料の日',
-    start: '2021-08-02',
-    end: '2021-08-06',
-  },
-  {
-    // id: 1,
-    title: '新作メニュー発表!!!',
-    start: '2021-08-30',
-    end: '2021-09-01',
-  },
-  {
-    '2021-08-30': '祝日',
-  },
-];
+import interactionPlugin from '@fullcalendar/interaction';
 
 function ItemEvent() {
+  const [posts, setPosts] = useState([]);
+
+  const { id } = useParams();
+  // const post = posts.find((post) => post.id === Number(id));
+
+  console.log('aaa');
+
+  const getData = () => {
+    const holidaies = [];
+    fetch('https://holidays-jp.github.io/api/v1/date.json', { method: 'GET' })
+      .then((res) => res.json())
+      .then((date) => {
+        Object.keys(date).forEach(function (key) {
+          // var val = this[key]; //keyが年-月-日 //valが祝日名
+          // console.log(key, val);
+          holidaies.push({
+            title: date[key],
+            start: key,
+          });
+        });
+      });
+    console.log(holidaies);
+    return holidaies;
+  };
   // const handleDateClick = useCallback((arg: DateClickArg) => {
   //   alert(arg.dateStr);
   // }, []);
+  // const events = [
+  //   {
+  //     title: '新作メニュー発表!!!',
+  //     start: '2021-08-30',
+  //     end: '2021-09-01',
+  //   },
+  //   {
+  //     title: '食べ放題イベント！！（お盆限定！！）',
+  //     start: '2021-08-14',
+  //     end: '2021-08-16',
+  //   },
+  //   {
+  //     title: 'コーヒー一杯無料の日',
+  //     start: '2021-08-02',
+  //     end: '2021-08-06',
+  //   },
+  //   {
+  //     title: '新作メニュー発表!!!',
+  //     start: '2021-08-30',
+  //     end: '2021-09-01',
+  //   },
+  //   {
+  //     title: 'てすと１',
+  //     start: '2021-08-08',
+  //   },
+  // ];
+  const events = getData();
   return (
     <>
       <section className="main">
@@ -109,7 +107,7 @@ function ItemEvent() {
             // 日本語に切り替え
             locale="ja"
             /////////////////
-            // イベント追加(上のevents関数からイベントの変更、追加可能！！！)//
+            // イベント追加(上のevents関数からイベントの変更、追加可能)//
             events={events}
             /////////////////
             // headerカスタマイズ(プラグイン使用)//
@@ -143,21 +141,6 @@ function ItemEvent() {
             nowIndicator
             dateClick={(e) => console.log(e.dateStr)}
             eventClick={(e) => console.log(e.event.id)}
-            //           googleCalendarApiKey: 'AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY',
-            // eventSources: [
-            //   {
-            //     googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
-            //     className: 'event_holiday',
-            //   },
-            //   {
-            //     googleCalendarId: 'hoge-na-calendar@group.calendar.google.com',
-            //   },
-            // ]
-            googleCalendarApiKeyU="AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY"
-            eventSources={{
-              googleCalendarId:
-                'ja.japanese#holiday@group.v.calendar.google.com',
-            }}
           />
         </div>
       </section>
@@ -167,4 +150,5 @@ function ItemEvent() {
 
 export default ItemEvent;
 
-// AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY =apikey
+// AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY : apikey
+// 265593461754-sql7mbqhh3fc0vkht5do3uaahcusn5db.apps.googleusercontent.com : クライアントID

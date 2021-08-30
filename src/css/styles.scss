@@ -61,6 +61,29 @@ body {
   }
 }
 
+// about
+
+.about {
+  text-align: center;
+  @include container();
+  @include margin-bottom();
+  &-header {
+    margin-bottom: 1%;
+    @include main-color();
+    @include font30();
+  }
+  &-title {
+    margin-bottom: 2%;
+    @include font22();
+  }
+  &-text {
+    margin-bottom: 0.5%;
+    @include font14();
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+
 // catch
 .catch {
   @include margin-bottom();
@@ -98,6 +121,79 @@ body {
   }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////
+
+// service
+
+.service {
+  text-align: center;
+  @include container();
+  @include margin-bottom();
+  &-header {
+    margin-bottom: 1%;
+    @include main-color();
+    @include font30();
+  }
+  &-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10%;
+    &::before {
+      content: ".";
+      background: rgb(248, 248, 248);
+      position: absolute;
+      color: #f8f8f8;
+      top: 12%;
+      right: 0;
+      width: 70%;
+      height: 100%;
+      z-index: -10;
+    }
+    // 反対バージョン
+    &-2 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      margin-bottom: 10%;
+      &::before {
+        content: ".";
+        background: rgb(248, 248, 248);
+        position: absolute;
+        color: #f8f8f8;
+        top: 12%;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        z-index: -10;
+      }
+    }
+  }
+  &-image {
+    width: 55%;
+  }
+  &-list {
+    width: 45%;
+  }
+  &-title {
+    margin-bottom: 3%;
+    @include font24();
+  }
+  &-text {
+    margin-bottom: 0.7%;
+    @include font16();
+  }
+  &-button {
+    width: 33%;
+    margin-top: 3%;
+    @include font20();
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+
 // info
 
 .info {
@@ -108,6 +204,8 @@ body {
   }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////
+
 /*news*/
 
 .news {
@@ -117,7 +215,7 @@ body {
   &-title {
     width: 35%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 12%;
     color: #a48c61;
     @include font30();
     margin: 0;
@@ -156,19 +254,18 @@ body {
         width: 100%;
       }
     }
-    // 詳細ページのcss
-    &-detail{
-      margin-top: 4%;
-    }
-    //////////////////
   }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////
 
 /*sns*/
 
 .sns {
   width: 40%;
 }
+
+///////////////////////////////////////////////////////////////////////////////////////
 
 /*footer*/
 
@@ -207,3 +304,5 @@ body {
     @include font20();
   }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////
