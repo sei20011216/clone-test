@@ -91,33 +91,33 @@ const main = () => {
             <p className="service-text">こんなことを考えて作りました。</p>
             <p className="service-text">大きな「深呼吸」をしに、</p>
             <p className="service-text">ぜひいらしてください。</p>
-            <button className="service-button button">CONCEPT</button>
+            <button className="service-button button">MORE</button>
           </div>
         </div>
         <div className="service-item-2 row-reverse">
           <img
             className="service-image"
-            src="https://images.unsplash.com/photo-1538792636877-dcdcd4679371?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
           />
           <div className="service-list">
-            <h1 className="service-title">CONCEPT</h1>
-            <p className="service-text">こんなことを考えて作りました。</p>
-            <p className="service-text">大きな「深呼吸」をしに、</p>
-            <p className="service-text">ぜひいらしてください。</p>
-            <button className="service-button button">CONCEPT</button>
+            <h1 className="service-title">MENU</h1>
+            <p className="service-text">日々食べるものだから</p>
+            <p className="service-text">素材にもこだわりを。</p>
+            <p className="service-text">心地良い場所を一緒に。</p>
+            <button className="service-button button">MORE</button>
           </div>
         </div>
         <div className="service-item">
           <img
             className="service-image"
-            src="https://images.unsplash.com/photo-1538792636877-dcdcd4679371?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+            src="https://cdn.pixabay.com/photo/2019/11/16/16/38/birthday-4630579_960_720.jpg"
           />
           <div className="service-list">
-            <h1 className="service-title">CONCEPT</h1>
-            <p className="service-text">こんなことを考えて作りました。</p>
-            <p className="service-text">大きな「深呼吸」をしに、</p>
-            <p className="service-text">ぜひいらしてください。</p>
-            <button className="service-button button">CONCEPT</button>
+            <h1 className="service-title">EVENT</h1>
+            <p className="service-text">人々とのふれあいを通して</p>
+            <p className="service-text">いのちを大切に。</p>
+            <p className="service-text">心を豊かにするカフェ。</p>
+            <button className="service-button button">MORE</button>
           </div>
         </div>
       </section>
