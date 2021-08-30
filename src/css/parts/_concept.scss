@@ -1,0 +1,104 @@
+// conceptのcss
+
+.concept {
+  &-body {
+    border: 1px solid #a48c61;
+    @include padding();
+  }
+  &-heading {
+    @include font32();
+    margin-bottom: 2%;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container-inner();
+    &-title {
+      @include font30();
+      @include main-color();
+    }
+    &-lead {
+      @include font16();
+    }
+  }
+  &-end {
+    text-align: end;
+  }
+  &-text {
+    width: 65%;
+  }
+  &-image {
+    width: 32%;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// STAFFのcss
+
+.staff {
+  @include margin-top();
+  border-top: 1px dashed #a48c61;
+  &-heading {
+    text-align: center;
+    padding: 5% 0 2% 0;
+    @include font32();
+    @include main-color();
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    @include container-inner();
+  }
+  &-card {
+    width: 27%;
+  }
+  &-image {
+    width: 100%;
+  }
+  &-title {
+    margin: 4.5% 0;
+    @include font26();
+    &-span {
+      @include font14();
+    }
+  }
+  &-lead {
+    @include font14();
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// introのcss
+
+.intro {
+  @include margin-top();
+  @include padding-top();
+  border-top: 1px dashed #a48c61;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container-inner();
+  }
+  &-text {
+  }
+  &-heading {
+    @include font32();
+    @include main-color();
+  }
+  &-title {
+    @include font18();
+    &-name {
+      @include font22();
+    }
+  }
+  &-lead {
+    @include font16();
+  }
+  &-image {
+    width: 28%;
+  }
+}

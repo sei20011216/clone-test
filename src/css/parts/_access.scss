@@ -1,0 +1,47 @@
+// accessのcss
+
+.access {
+  @include container();
+  &-body {
+    border: 1px solid #a48c61;
+    @include padding();
+  }
+  &-item {
+    display: flex;
+    justify-content: space-evenly;
+    // align-items: center;
+    @include container-inner();
+  }
+  &-map {
+    height: auto;
+    width: 50%;
+  }
+  &-card {
+    width: 28%;
+  }
+  &-image {
+    margin-bottom: 10%;
+  }
+  &-info {
+    margin-bottom: 3%;
+    @include font20();
+  }
+  &-address {
+    margin-bottom: 5%;
+    @include font14();
+  }
+  &-tell {
+    margin-bottom: 2%;
+    @include font16();
+  }
+  &-time {
+    @include font14();
+  }
+  &-button {
+    display: block;
+    width: 70%;
+    @include font26();
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////

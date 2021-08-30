@@ -1,0 +1,44 @@
+// menuのcss
+
+.menu {
+  &-body {
+    border: 1px solid #a48c61;
+    @include padding();
+  }
+  &-heading {
+    @include font32();
+    @include padding-bottom();
+    @include container-inner();
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #a48c61;
+    @include padding();
+    @include container-inner();
+  }
+  &-text {
+  }
+  &-title {
+    @include font18();
+    &-sub {
+      @include font32();
+      @include main-color();
+      margin-bottom: 10%;
+    }
+  }
+  &-lead {
+    @include margin-bottom();
+    @include font16();
+    &-sub{
+      margin-top: 10%;
+      @include font30();
+    }
+  }
+  &-image {
+    width: 40%;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
