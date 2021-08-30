@@ -73,19 +73,19 @@ function ItemEvent() {
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image01.jpg?v=20200908170427"
+                    src="https://cdn.pixabay.com/photo/2012/02/28/15/37/restaurant-18311_960_720.jpg"
                   />
                 </li>
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image02.jpg?v=20200908170427"
+                    src="https://cdn.pixabay.com/photo/2020/03/25/18/58/table-4968325_960_720.jpg"
                   />
                 </li>
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image03.jpg?v=20200908170427"
+                    src="https://cdn.pixabay.com/photo/2019/11/16/16/38/birthday-4630579_960_720.jpg"
                   />
                 </li>
               </ul>

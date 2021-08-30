@@ -15,19 +15,19 @@ class ItemAccess extends React.Component {
                   <li className="main-slider-item">
                     <img
                       className="main-slider-img"
-                      src="https://vico-co.jp/dist/img/main/l-hero__image01.jpg?v=20200908170427"
+                      src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                     />
                   </li>
                   <li className="main-slider-item">
                     <img
                       className="main-slider-img"
-                      src="https://vico-co.jp/dist/img/main/l-hero__image02.jpg?v=20200908170427"
+                      src="https://images.unsplash.com/photo-1516197370049-569c4eaba1d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
                     />
                   </li>
                   <li className="main-slider-item">
                     <img
                       className="main-slider-img"
-                      src="https://vico-co.jp/dist/img/main/l-hero__image03.jpg?v=20200908170427"
+                      src="https://images.unsplash.com/photo-1523368749929-6b2bf370dbf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
                     />
                   </li>
                 </ul>
@@ -48,10 +48,18 @@ class ItemAccess extends React.Component {
                   className="access-image"
                   src="https://cdn.pixabay.com/photo/2015/05/15/14/55/cafe-768771_960_720.jpg"
                 />
-                <h1 className="access-info">JR大阪駅から徒歩2分<br />駐車場あります。</h1>
-                <h1 className="access-address">〒000-0000  大阪府〇〇〇市〇〇町00-00</h1>
-                <p className="access-tell"><span className="access-time">TELL:000-0000-0000</span>
-                  <br />OPEN 08:30 / CLOSE 18:00
+                <h1 className="access-info">
+                  JR大阪駅から徒歩2分
+                  <br />
+                  駐車場あります。
+                </h1>
+                <h1 className="access-address">
+                  〒000-0000 大阪府〇〇〇市〇〇町00-00
+                </h1>
+                <p className="access-tell">
+                  <span className="access-time">TELL:000-0000-0000</span>
+                  <br />
+                  OPEN 08:30 / CLOSE 18:00
                 </p>
                 <button className="access-button button">CONTACT</button>
               </div>

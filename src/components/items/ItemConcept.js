@@ -56,7 +56,7 @@ class ItemCreate extends React.Component {
                 </div>
                 <img
                   className="concept-image"
-                  src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_11.jpg"
+                  src="https://cdn.pixabay.com/photo/2018/07/28/15/22/vegan-3568298_960_720.jpg"
                 />
               </div>
               <div className="concept-item row-reverse">
@@ -76,7 +76,7 @@ class ItemCreate extends React.Component {
                 </div>
                 <img
                   className="concept-image"
-                  src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_19.jpg"
+                  src="https://cdn.pixabay.com/photo/2017/07/16/08/26/chicken-2508631_960_720.jpg"
                 />
               </div>
               <div className="concept-item">
@@ -98,7 +98,7 @@ class ItemCreate extends React.Component {
                 </div>
                 <img
                   className="concept-image"
-                  src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_28.jpg"
+                  src="https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg"
                 />
               </div>
               <div className="concept-item row-reverse">
@@ -118,7 +118,7 @@ class ItemCreate extends React.Component {
                 </div>
                 <img
                   className="concept-image"
-                  src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_33.jpg"
+                  src="https://cdn.pixabay.com/photo/2017/05/12/08/29/coffee-2306471_960_720.jpg"
                 />
               </div>
               {/* ここからstaffページです。 */}
@@ -128,7 +128,7 @@ class ItemCreate extends React.Component {
                   <div className="staff-card">
                     <img
                       className="staff-image"
-                      src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_48.jpg"
+                      src="https://cdn.pixabay.com/photo/2016/01/19/17/50/girl-1149933_960_720.jpg"
                     />
                     <h1 className="staff-title">
                       <span className="staff-title-span">M</span>ARUBAYASHI
@@ -144,7 +144,7 @@ class ItemCreate extends React.Component {
                   <div className="staff-card">
                     <img
                       className="staff-image"
-                      src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_50.jpg"
+                      src="https://cdn.pixabay.com/photo/2017/05/22/07/09/fashion-2333269_960_720.jpg"
                     />
                     <h1 className="staff-title">
                       <span className="staff-title-span">O</span>OBA
@@ -160,7 +160,7 @@ class ItemCreate extends React.Component {
                   <div className="staff-card">
                     <img
                       className="staff-image"
-                      src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_46.jpg"
+                      src="https://cdn.pixabay.com/photo/2017/03/20/13/45/portrait-2159177_960_720.jpg"
                     />
                     <h1 className="staff-title">
                       <span className="staff-title-span">N</span>AKAI
@@ -188,15 +188,24 @@ class ItemCreate extends React.Component {
                     </h1>
                     <p className="intro-lead">
                       2008 年自身のスタジオを設立
-                      <br />「京都」を拠点に  住宅を主にデザインを手がけ
-                      <br />飲食店デザイン企画、・アパレル企画・企業ブランディングなど、
-                      <br />ジャンルを問わずプロデュース＆コーディネイトにたずさわる
-                      <br />「その時、そのひと、その場所」をデザインし続けたい
-                      <br />経年変化を楽しんで、いつまでも居心地のいい空間を。
-                      <br />と、いつも願います。
+                      <br />
+                      「京都」を拠点に 住宅を主にデザインを手がけ
+                      <br />
+                      飲食店デザイン企画、・アパレル企画・企業ブランディングなど、
+                      <br />
+                      ジャンルを問わずプロデュース＆コーディネイトにたずさわる
+                      <br />
+                      「その時、そのひと、その場所」をデザインし続けたい
+                      <br />
+                      経年変化を楽しんで、いつまでも居心地のいい空間を。
+                      <br />
+                      と、いつも願います。
                     </p>
                   </div>
-                  <img className="intro-image" src="http://soupcafemon.com/mon_p/mon_concept_p/mon_concept_tg04.jpg" />
+                  <img
+                    className="intro-image"
+                    src="https://cdn.pixabay.com/photo/2017/05/22/07/20/model-2333326_960_720.jpg"
+                  />
                 </div>
               </div>
             </div>

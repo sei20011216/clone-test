@@ -49,19 +49,19 @@ const ItemContact = () => {
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image01.jpg?v=20200908170427"
+                    src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
                   />
                 </li>
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image02.jpg?v=20200908170427"
+                    src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                   />
                 </li>
                 <li className="main-slider-item">
                   <img
                     className="main-slider-img"
-                    src="https://vico-co.jp/dist/img/main/l-hero__image03.jpg?v=20200908170427"
+                    src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                   />
                 </li>
               </ul>
@@ -71,68 +71,68 @@ const ItemContact = () => {
       </section>
       <section className="contact">
         <h1 className="contact-title"></h1>
-          <form onSubmit={formik.handleSubmit}>
-            <div className="contact-item">
-              <label htmlFor="name" className="contact-label">
-                お名前
-              </label>
-              <input
-                className="contact-input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="山田 太郎"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.name}
-              />
-              {formik.touched.name && formik.errors.name ? (
-                <div className="contact-error">{formik.errors.name}</div>
-              ) : null}
-            </div>
+        <form onSubmit={formik.handleSubmit}>
+          <div className="contact-item">
+            <label htmlFor="name" className="contact-label">
+              お名前
+            </label>
+            <input
+              className="contact-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="山田 太郎"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.name}
+            />
+            {formik.touched.name && formik.errors.name ? (
+              <div className="contact-error">{formik.errors.name}</div>
+            ) : null}
+          </div>
 
-            <div className="contact-item">
-              <label htmlFor="email" className="contact-label">
-                メールアドレス
-              </label>
-              <input
-                className="contact-input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@icloud.com"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.email}
-              />
-              {formik.touched.email && formik.errors.email ? (
-                <div className="contact-error">{formik.errors.email}</div>
-              ) : null}
-            </div>
+          <div className="contact-item">
+            <label htmlFor="email" className="contact-label">
+              メールアドレス
+            </label>
+            <input
+              className="contact-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@icloud.com"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.email}
+            />
+            {formik.touched.email && formik.errors.email ? (
+              <div className="contact-error">{formik.errors.email}</div>
+            ) : null}
+          </div>
 
-            <div className="contact-item">
-              <label htmlFor="channel" className="contact-label">
-                お聞きしたいこと
-              </label>
-              <input
-                className="contact-input"
-                type="text"
-                id="channel"
-                name="channel"
-                placeholder="お聞きしたいこと"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.channel}
-              />
-              {formik.touched.channel && formik.errors.channel ? (
-                <div className="contact-error">{formik.errors.channel}</div>
-              ) : null}
-            </div>
+          <div className="contact-item">
+            <label htmlFor="channel" className="contact-label">
+              お聞きしたいこと
+            </label>
+            <input
+              className="contact-input"
+              type="text"
+              id="channel"
+              name="channel"
+              placeholder="お聞きしたいこと"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.channel}
+            />
+            {formik.touched.channel && formik.errors.channel ? (
+              <div className="contact-error">{formik.errors.channel}</div>
+            ) : null}
+          </div>
 
-            <button className="contact-button button" type="submit">
-              送信
-            </button>
-          </form>
+          <button className="contact-button button" type="submit">
+            送信
+          </button>
+        </form>
       </section>
     </>
   );
