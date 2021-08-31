@@ -137,10 +137,15 @@ const main = () => {
       {/* </section> */}
       <section className="access">
         <div className="access-body">
-        <h1 className="access-heading" data-en="Recruit">ACCESS</h1>
-        <p className="access-heading-sub">アクセス</p>
+          <h1 className="access-heading" data-en="Recruit">
+            ACCESS
+          </h1>
+          <p className="access-heading-sub">アクセス</p>
           <div className="access-item">
-            <img className="access-img" src="https://cdn.pixabay.com/photo/2019/06/25/13/59/city-4298285_960_720.jpg" />
+            <img
+              className="access-img"
+              src="https://cdn.pixabay.com/photo/2019/06/25/13/59/city-4298285_960_720.jpg"
+            />
             <div className="access-card">
               <h1 className="access-info">
                 JR大阪駅から徒歩2分
