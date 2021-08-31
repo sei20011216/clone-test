@@ -267,7 +267,6 @@ function ItemEvent() {
             //////////////////////////
             // イベント追加(上のevents関数からイベントの変更、追加可能)//
             events={events1}
-            events={events2}
             eventColor="rgba(164,140,97,0.7)"
           />
         </div>
