@@ -70,7 +70,10 @@ const ItemContact = () => {
         </div>
       </section>
       <section className="contact">
-        <h1 className="contact-title"></h1>
+        <h1 className="access-heading" data-en="Recruit">
+          CONTACT
+        </h1>
+        <p className="access-heading-sub">お問い合わせ</p>
         <form onSubmit={formik.handleSubmit}>
           <div className="contact-item">
             <label htmlFor="name" className="contact-label">

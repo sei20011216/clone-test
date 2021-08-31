@@ -26,6 +26,16 @@
       height: 400px;
       width: 100%;
       margin-bottom: 4%;
+      &-2 {
+        height: auto;
+        width: 48%;
+        margin-bottom: 4%;
+      }
+      &-3 {
+        height: auto;
+        width: 40%;
+        margin-bottom: 4%;
+      }
     }
     &-time {
       color: #000;
@@ -37,10 +47,31 @@
     &-header {
       color: #a48c61;
       @include font36();
+      &-2 {
+        border-left: 6px solid #aa8d3e;
+        border-bottom: 1px solid #aa8d3e;
+        padding: 0.5rem 0.75rem;
+        color: #aa8d3f;
+        font-weight: bold;
+        line-height: 1;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        @include font24();
+      }
     }
     &-text {
       padding-bottom: 4%;
       @include font14();
+      &-2 {
+        padding-bottom: 4%;
+        width: 55%;
+        @include font14();
+      }
+    }
+    &-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

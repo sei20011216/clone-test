@@ -81,7 +81,7 @@ const main = () => {
       </section>
       <section className="service">
         <h1 className="service-header">SERVICE</h1>
-        <p className="service-header-sub">お知らせ一覧</p>
+        <p className="service-header-sub">サービス</p>
         <div className="service-item">
           <img
             className="service-image"
@@ -131,7 +131,7 @@ const main = () => {
       {/* <section className="info-container"> */}
       <section className="news">
         <h1 className="news-title">NEWS</h1>
-        <p className="news-title-sub">ニュース</p>
+        <p className="news-title-sub">お知らせ一覧</p>
         <News />
       </section>
       {/* </section> */}

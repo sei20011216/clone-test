@@ -6,6 +6,7 @@ import FullCalendar, { formatDate } from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+// import { INITIAL_EVENTS, createEventId } from "./event-utils";
 
 function ItemEvent() {
   const [posts, setPosts] = useState([]);
@@ -35,33 +36,32 @@ function ItemEvent() {
   // const handleDateClick = useCallback((arg: DateClickArg) => {
   //   alert(arg.dateStr);
   // }, []);
-  // const events = [
-  //   {
-  //     title: '新作メニュー発表!!!',
-  //     start: '2021-08-30',
-  //     end: '2021-09-01',
-  //   },
-  //   {
-  //     title: '食べ放題イベント！！（お盆限定！！）',
-  //     start: '2021-08-14',
-  //     end: '2021-08-16',
-  //   },
-  //   {
-  //     title: 'コーヒー一杯無料の日',
-  //     start: '2021-08-02',
-  //     end: '2021-08-06',
-  //   },
-  //   {
-  //     title: '新作メニュー発表!!!',
-  //     start: '2021-08-30',
-  //     end: '2021-09-01',
-  //   },
-  //   {
-  //     title: 'てすと１',
-  //     start: '2021-08-08',
-  //   },
-  // ];
-  const events = getData();
+  const events = [
+    {
+      title: '新作メニュー発表!!!',
+      start: '2021-08-30',
+      end: '2021-09-01',
+    },
+    {
+      title: '食べ放題イベント！！（お盆限定！！）',
+      start: '2021-08-14',
+      end: '2021-08-16',
+    },
+    {
+      title: 'コーヒー一杯無料の日',
+      start: '2021-08-02',
+      end: '2021-08-06',
+    },
+    {
+      title: '新作メニュー発表!!!',
+      start: '2021-08-30',
+      end: '2021-09-01',
+    },
+    {
+      title: 'てすと１',
+      start: '2021-08-08',
+    },
+  ];
   return (
     <>
       <section className="main">
@@ -94,6 +94,10 @@ function ItemEvent() {
         </div>
       </section>
       <section className="event">
+        <h1 className="access-heading" data-en="Recruit">
+          EVENT
+        </h1>
+        <p className="access-heading-sub">イベント</p>
         <div>
           <FullCalendar
             // インストールしたプラグイン//
@@ -101,14 +105,12 @@ function ItemEvent() {
               dayGridPlugin,
               timeGridPlugin,
               interactionPlugin,
-              // googleCalendarPlugin,
             ]}
             /////////////////
             // 日本語に切り替え
             locale="ja"
             /////////////////
-            // イベント追加(上のevents関数からイベントの変更、追加可能)//
-            events={events}
+
             /////////////////
             // headerカスタマイズ(プラグイン使用)//
             headerToolbar={{
@@ -136,6 +138,7 @@ function ItemEvent() {
             // 不明//
             initialView="dayGridMonth"
             //////////////////////////
+            // イベント追加(上のevents関数からイベントの変更、追加可能)//
             events={events}
             eventColor="red"
             nowIndicator

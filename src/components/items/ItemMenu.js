@@ -38,6 +38,10 @@ class ItemMenu extends React.Component {
         <section className="menu">
           <div className="container">
             <div className="menu-body">
+              <h1 className="access-heading" data-en="Recruit">
+                MENU
+              </h1>
+              <p className="access-heading-sub">メニュー</p>
               <h1 className="menu-heading">
                 「すてきなあさ」を探してきてください。
               </h1>

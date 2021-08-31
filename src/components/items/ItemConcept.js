@@ -42,6 +42,10 @@ class ItemCreate extends React.Component {
         <section className="concept">
           <div className="container">
             <div className="concept-body">
+              <h1 className="access-heading" data-en="Recruit">
+                CONCEPT
+              </h1>
+              <p className="access-heading-sub">大切にしていること</p>
               <div className="concept-item">
                 <div className="concept-text">
                   <h1 className="concept-heading">

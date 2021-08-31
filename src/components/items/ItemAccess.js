@@ -37,6 +37,10 @@ class ItemAccess extends React.Component {
         </section>
         <section className="access">
           <div className="access-body">
+            <h1 className="access-heading" data-en="Recruit">
+              ACCESS
+            </h1>
+            <p className="access-heading-sub">アクセス</p>
             <div className="access-item">
               <iframe
                 className="access-map"
