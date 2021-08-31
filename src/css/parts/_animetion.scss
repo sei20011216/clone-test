@@ -193,46 +193,37 @@
   }
 }
 
-// .contact-button:hover {
-//   background: #a48c61;
-//   color: #fff;
-// }
+// スクロールしたときにfadeinするアニメーションcss
 
-// /*矢印と下線の形状*/
-// .contact-button::before {
-//   content: "";
-//   /*絶対配置で下線の位置を決める*/
-//   position: absolute;
-//   top: 50%;
-//   right: -26px;
-//   /*下線の形状*/
-//   width: 40px;
-//   height: 1px;
-//   background: #a48c61;
-//   /*アニメーションの指定*/
-//   transition: all 0.2s linear;
-// }
+.main-course-item {
+  transform: translateY(150px);
+  opacity: 0;
+}
 
-// .contact-button::after {
-//   content: "";
-//   /*絶対配置で矢印の位置を決める*/
-//   position: absolute;
-//   top: 20%;
-//   right: -21px;
-//   /*矢印の形状*/
-//   width: 1px;
-//   height: 12px;
-//   background: #a48c61;
-//   transform: skewX(45deg);
-//   /*アニメーションの指定*/
-//   transition: all 0.2s linear;
-// }
+.main-course-item-2 {
+  transform: translateY(150px);
+  opacity: 0;
+}
 
-/*hoverした際の移動*/
-// .contact-button:hover::before {
-//   right: -30px;
-// }
+.main-course-item-4 {
+  transform: translateY(150px);
+  opacity: 0;
+}
 
-// .contact-button:hover::after {
-//   right: -25px;
-// }
+.main-course-item-1 {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.main-course-item-3 {
+  transition: 1.5s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.main-course-item-5 {
+  transition: 2s;
+  transform: translateY(0);
+  opacity: 1;
+}

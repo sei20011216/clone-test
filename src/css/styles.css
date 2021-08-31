@@ -738,7 +738,48 @@ template {
   right: -25px;
 }
 
-/*hoverした際の移動*/
+.main-course-item {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+}
+
+.main-course-item-2 {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+}
+
+.main-course-item-4 {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+}
+
+.main-course-item-1 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.main-course-item-3 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.main-course-item-5 {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .concept-body {
   border: 1px solid #a48c61;
   padding: 5% 0;
