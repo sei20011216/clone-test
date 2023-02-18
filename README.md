@@ -1,3 +1,3 @@
-# microcms,React.js,APIを使いcafeサイトを制作しました。
+# microcms,React.jsを使いcafeサイトを制作しました。
 
-会社でこれからHP制作でmicrocms,react.jsを採用する方向になり僕自身両方の知識があまりなかったため練習がてらにmicrocms,React.js,APIを使いcafeサイトを制作しました。
+会社でこれからHP制作でmicrocms,react.jsを採用する方向になり僕自身両方の知識があまりなかったため練習でmicrocms,React.jsを使いcafeサイトを制作しました。
