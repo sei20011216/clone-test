@@ -1,7 +1,3 @@
-# 会社でmicrocms,react.jsを採用する方向になり僕自身両方の知識があまりなかったため練習がてらにmicrocms,React.js,APIを使いcafeサイトを制作しました。
+# microcms,React.js,APIを使いcafeサイトを制作しました。
 
-ああああああああああああ
-
-## Available Scripts
-
-In the project directory, you can run:
+会社でmicrocms,react.jsを採用する方向になり僕自身両方の知識があまりなかったため練習がてらにmicrocms,React.js,APIを使いcafeサイトを制作しました。
