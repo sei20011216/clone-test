@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# 会社でmicrocms,react.jsを採用する方向になり僕自身両方の知識があまりなかったため練習がてらにmicrocms,React.js,APIを使いcafeサイトを制作しました。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ああああああああああああ
 
 ## Available Scripts
 
