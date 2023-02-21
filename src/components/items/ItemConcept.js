@@ -6,7 +6,7 @@ import React from 'react';
 //   return <div>ItemCreate</div>;
 // };
 
-class ItemCreate extends React.Component {
+export class ItemConcept extends React.Component {
   render() {
     return (
       <>
@@ -219,5 +219,3 @@ class ItemCreate extends React.Component {
     );
   }
 }
-
-export default ItemCreate;

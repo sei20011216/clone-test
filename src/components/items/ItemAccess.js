@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class ItemAccess extends React.Component {
+export class ItemAccess extends React.Component {
   render() {
     return (
       <>
@@ -74,5 +74,3 @@ class ItemAccess extends React.Component {
     );
   }
 }
-
-export default ItemAccess;

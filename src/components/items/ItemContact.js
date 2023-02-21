@@ -32,7 +32,7 @@ const validate = (values) => {
   return errors;
 };
 
-const ItemContact = () => {
+export const ItemContact = () => {
   const formik = useFormik({
     initialValues,
     onSubmit,
@@ -140,5 +140,3 @@ const ItemContact = () => {
     </>
   );
 };
-
-export default ItemContact;

@@ -23,7 +23,7 @@ const News = () => {
 
   return (
     <div>
-      {posts.map((post) => (
+      {posts?.map((post) => (
         <Link to={`/items/news/${post.id}`} className="news-item">
           <span className="news-item-day">{post.time}</span>
           <h1 key={post.id} className="news-item-title">

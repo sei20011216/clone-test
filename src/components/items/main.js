@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import News from '../../blog/News';
 // microCMS連携
 
-const main = () => {
+export const Main = () => {
   return (
     <>
       <section className="main">
@@ -170,5 +170,3 @@ const main = () => {
     </>
   );
 };
-
-export default main;

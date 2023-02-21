@@ -7,7 +7,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 
-function ItemEvent() {
+export function ItemEvent() {
   // const [posts, setPosts] = useState([]);
 
   // const { id } = useParams();
@@ -275,7 +275,6 @@ function ItemEvent() {
   );
 }
 
-export default ItemEvent;
 
 // AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY : apikey
 // 265593461754-sql7mbqhh3fc0vkht5do3uaahcusn5db.apps.googleusercontent.com : クライアントID

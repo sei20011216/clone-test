@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Slidebar from './Slidebar';
 
-const NewsDetail = () => {
+export const NewsDetail = () => {
   const [post, setPost] = useState([]);
   console.log(post);
 
@@ -110,7 +110,5 @@ const NewsDetail = () => {
     return <></>;
   }
 };
-
-export default NewsDetail;
 
 // AIzaSyAMAEO-pCTxlheTIzL1POPQZdKsg-OZCsY =apikey

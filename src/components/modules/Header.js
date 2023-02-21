@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+export const Header = () => {
   return (
     <div className="header-nav">
       <ul className="header-nav-list">
@@ -27,5 +27,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class ItemMenu extends React.Component {
+export class ItemMenu extends React.Component {
   render() {
     return (
       <>
@@ -185,5 +185,3 @@ class ItemMenu extends React.Component {
     );
   }
 }
-
-export default ItemMenu;
