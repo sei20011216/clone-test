@@ -12,7 +12,8 @@ export const NewsDetail = () => {
   useEffect(() => {
     fetch(`https://seiyaookura.microcms.io/api/v1/blog/${id}`, {
       headers: {
-        'X-API-KEY': process.env.REACT_APP_API_KEY,
+        // 'X-API-KEY': process.env.REACT_APP_API_KEY,
+        'X-API-KEY': 'c3b6a5c3-bcfd-4789-808c-e5f153b474c0',
       },
       method: 'GET',
     })
@@ -20,7 +21,7 @@ export const NewsDetail = () => {
       .then((date) => {
         setPost(date);
         // console.log('ここ');
-        console.log(date);
+        // console.log(date);
       });
   }, []);
 
