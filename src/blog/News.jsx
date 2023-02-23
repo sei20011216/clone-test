@@ -11,7 +11,8 @@ const News = () => {
   useEffect(() => {
     fetch('https://seiyaookura.microcms.io/api/v1/blog', {
       headers: {
-        'X-API-KEY': process.env.REACT_APP_API_KEY,
+        // 'X-API-KEY': process.env.REACT_APP_API_KEY, envファイル消えてるからエラー起きてる。
+        'X-API-KEY': 'c3b6a5c3-bcfd-4789-808c-e5f153b474c0',
       },
       method: 'GET',
     })

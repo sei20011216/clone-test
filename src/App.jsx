@@ -18,11 +18,11 @@ export const App = () => {
         <header className="header">
           <div className="container">
             <h1 className="header-logo">
-              <img
+              {/* <img
                 className="header-logo"
                 src="https://static-cse.canva.com/blob/180682/2020.04.09_logo_stylish_create_tips-3.png"
                 alt=""
-              />
+              /> */}
             </h1>
           </div>
           {/* <h1 className="header-logo"><a href="#"><img className="header-logo" src="http://soupcafemon.com/mon_p/mon_head_p/mon_head_04.jpg" alt="" /></a></h1></div> */}
